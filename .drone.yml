@@ -1,0 +1,10 @@
+---
+kind: pipeline
+name: testing
+
+steps:
+- name: backend
+  image: golang:1.15
+  commands:
+    - go build
+    - go test
