@@ -48,7 +48,6 @@ services:
           memory: 2G
     environment:
       DRONE_RPC_HOST: drone
-
       DRONE_RPC_PROTO: http # 與 drone server 是透過 docker 內網溝通，使用 http 即可
       DRONE_RUNNER_CAPACITY: 5
       DRONE_RUNNER_NAME: drone-docker-runner
